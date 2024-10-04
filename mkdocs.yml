@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: Bjartur's Fab Academy Journey
+
+theme:
+  name: material
