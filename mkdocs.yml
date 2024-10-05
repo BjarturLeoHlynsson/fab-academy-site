@@ -1,3 +1,7 @@
+# Code Borrowed from Fabisa.is and Svavar Konradarspns Fab Academy Site.
+# Fabisa: https://github.com/fablabisastaff/fabisa_site/blob/main/mkdocs.yml
+# Svavar: https://gitlab.fabcloud.org/academany/fabacademy/2023/labs/isafjordur/students/svavar-konradsson/-/blob/main/mkdocs.yml?ref_type=heads
+
 site_name: Bjartur's Fab Academy Journey 
 
 
@@ -16,14 +20,14 @@ theme:
     - navigation.tabs
     - navigation.top
   palette:
-    - media: "(prefers-color-scheme: light)"  # System preference for light mode
+    - media: "(prefers-color-scheme: light)"  # Toggle for light mode
       scheme: default
       toggle: 
         icon: material/lightbulb
         name: Switch to dark mode
       primary: black
       accent: red
-    - media: "(prefers-color-scheme: dark)"   # System preference for dark mode
+    - media: "(prefers-color-scheme: dark)"   # Toggle for dark mode
       scheme: slate
       toggle:
         icon: material/lightbulb-outline
@@ -32,11 +36,12 @@ theme:
       accent: red 
   font:
     text: Roboto
-    code: Roboto Mono
+    code: Fira Code
 
 markdown_extensions:
   - attr_list
   - md_in_html
+  - admonition
 
 nav:
   - Home: index.md
