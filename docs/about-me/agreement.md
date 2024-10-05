@@ -32,5 +32,4 @@ I am a Fab Academy student, responsible for:
 
 Signed by committing this file in my repository,
 
-Bjartur Leo Hlynsson
-
+[Signature](images/signature.jpg){: style="width:100%"}
