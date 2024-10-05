@@ -32,4 +32,4 @@ I am a Fab Academy student, responsible for:
 
 Signed by committing this file in my repository,
 
-[Signature](images/signature.jpg){: style="width:100%"}
+![Signature](../images/Signature.svg){: style="width:45%"}

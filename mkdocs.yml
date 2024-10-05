@@ -34,6 +34,10 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 nav:
   - Home: index.md
   - About:
