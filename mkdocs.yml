@@ -39,9 +39,24 @@ theme:
     code: Fira Code
 
 markdown_extensions:
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
   - attr_list
   - md_in_html
-  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 
 nav:
   - Home: index.md
@@ -59,7 +74,7 @@ nav:
     - 7. Computer-Controlled Machining: assignments/week07.md
     - 8. Electronics Production: assignments/week08.md
     - 9. Output Devices: assignments/week09.md
-    - 10. MACHINE WEEK: assignments/week10.md
+    - 10. Machine Week: assignments/week10.md
     - 11. Input Devices: assignments/week11.md
     - 12. Molding and Casting: assignments/week12.md
     - 13. Networking and Communications: assignments/week13.md
@@ -70,13 +85,4 @@ nav:
     - 18-20. Project Development: assignments/week18.md
   - Final Project:
     - Overview: final-project/overview.md
-    - Ideas: final-project/ideas.md
-    - 3D Design: final-project/3d_design.md
-    - Motor Control: final-project/motor_control.md
-    - Embedded programming: final-project/embedded_programming.md
-    - Electronics Design: final-project/electronics.md
-    - End Effector: final-project/effector.md
-    - Interface: final-project/interface.md
-    - System integration: final-project/integration.md
-    - Build your own Baksi: final-project/build.md
-    - Presentation: final-project/presentation.md
+
