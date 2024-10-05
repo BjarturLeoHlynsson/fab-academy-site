@@ -10,16 +10,11 @@ theme:
   icon:
     repo: simple/github
   features:
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top 
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
-  language: is
+    - navigation.top
   palette:
     - media: "(prefers-color-scheme: light)"  # System preference for light mode
       scheme: default
@@ -43,7 +38,6 @@ nav:
   - Home: index.md
   - About:
     - Bio: about-me/bio.md
-    - My desk: about-me/desk.md
     - Student Agreement: about-me/agreement.md
   - Assignments:
     - 0. Overview: assignments/overview.md
