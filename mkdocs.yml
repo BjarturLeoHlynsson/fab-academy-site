@@ -1,33 +1,79 @@
-site_name: Bjartur's Fab Academy Journey
+site_name: Bjartur's Fab Academy Journey 
 
-repo_name: Github Repository
+
 repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-test-site
-
-
+repo_name: "Site Repo"
 theme:
-
   name: material
-  
   logo: images/FabLabLogo.svg
   favicon: images/FabLabLogo.svg
   icon:
     repo: simple/github
-
-  palette: 
-
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top 
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: is
+  palette:
+    - media: "(prefers-color-scheme: light)"  # System preference for light mode
+      scheme: default
+      toggle: 
+        icon: material/lightbulb
         name: Switch to dark mode
       primary: black
       accent: red
-
-    # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"   # System preference for dark mode
+      scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb-outline
         name: Switch to light mode
-      primary: black
-      accent: red
-      favicon: images/FabLabLogo.svg
+      primary: black 
+      accent: red 
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - About:
+    - Bio: about-me/bio.md
+    - My desk: about-me/desk.md
+    - Student Agreement: about-me/agreement.md
+  - Assignments:
+    - 0. Overview: assignments/overview.md
+    - 1. Principles and Practices: assignments/week01.md
+    - 2. Computer-Aided Design: assignments/week02.md
+    - 3. Computer-Controlled Cutting: assignments/week03.md
+    - 4. Embedded Programming: assignments/week04.md
+    - 5. 3D Scanning and Printing: assignments/week05.md
+    - 6. Electronics Design: assignments/week06.md
+    - 7. Computer-Controlled Machining: assignments/week07.md
+    - 8. Electronics Production: assignments/week08.md
+    - 9. Output Devices: assignments/week09.md
+    - 10. MACHINE WEEK: assignments/week10.md
+    - 11. Input Devices: assignments/week11.md
+    - 12. Molding and Casting: assignments/week12.md
+    - 13. Networking and Communications: assignments/week13.md
+    - 14. Interface and Application Programming: assignments/week14.md
+    - 15. Wild Card Week: assignments/week15.md
+    - 16. Applications and Implications: assignments/week16.md
+    - 17. Invention, Intellectual Property and Business Models: assignments/week17.md
+    - 18-20. Project Development: assignments/week18.md
+  - Final Project:
+    - Overview: final-project/overview.md
+    - Ideas: final-project/ideas.md
+    - 3D Design: final-project/3d_design.md
+    - Motor Control: final-project/motor_control.md
+    - Embedded programming: final-project/embedded_programming.md
+    - Electronics Design: final-project/electronics.md
+    - End Effector: final-project/effector.md
+    - Interface: final-project/interface.md
+    - System integration: final-project/integration.md
+    - Build your own Baksi: final-project/build.md
+    - Presentation: final-project/presentation.md
