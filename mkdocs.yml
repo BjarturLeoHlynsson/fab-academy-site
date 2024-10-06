@@ -35,8 +35,8 @@ theme:
       primary: black 
       accent: red 
   font:
-    text: Roboto
-    code: Fira Code
+    text: Roboto 
+    code: Roboto Mono  
 
 markdown_extensions:
   - pymdownx.snippets
