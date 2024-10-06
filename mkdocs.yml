@@ -3,7 +3,7 @@
 # Svavar: https://gitlab.fabcloud.org/academany/fabacademy/2023/labs/isafjordur/students/svavar-konradsson/-/blob/main/mkdocs.yml?ref_type=heads
 
 site_name: Bjartur's Fab Academy Journey 
-
+site_url: https://bjarturleohlynsson.github.io/fab-academy-test-site/
 
 repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-test-site
 repo_name: "Site Repo"
@@ -44,7 +44,6 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -85,4 +84,3 @@ nav:
     - 18-20. Project Development: assignments/week18.md
   - Final Project:
     - Overview: final-project/overview.md
-
