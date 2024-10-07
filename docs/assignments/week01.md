@@ -75,7 +75,7 @@ Then you just press sync, choose your desired repository on the top, and then pr
 
 ![GitHub Repository Main Page](../images/Github-Repo.png){:style="width:100%"}
 
-Before i set up GitHub Pages, i needed to tell GitHub that this is an MKDocs site. To do that i followed these [these instructions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/), I told me i need to make a GitHub "Action". To make a GitHub Action, went to the top bar and opened up Actions:
+Before i set up GitHub Pages, i needed to tell GitHub that this is an MKDocs site. To do that i followed these [these instructions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/), I told me i need to make a GitHub `"Action"`. To make a GitHub Action, went to the top bar and opened up Actions:
 
 (INSERT HERE ACTIONS TUTORIAL IMAGES!!)
 
@@ -111,11 +111,11 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
-After setting up Actions, i needed to deploy my page using GitHub Pages. To configure Pages, i opened up settings:
+After setting up Actions, i needed to deploy my page using GitHub Pages. To configure Pages, i opened up `settings`:
 
 ![GitHub Repository Settings Page](../images/Github-Repo-Settings.png){:style="width:100%"}
 
-In settings, i opened the Pages tab:
+In settings, i opened the `Pages` tab:
 
 ![GitHub Repository Pages Page](../images/Github-Settings-Pages.png){:style="width:100%"}
 
@@ -127,6 +127,6 @@ After around 20 seconds, i reloaded the page and at the top there was a pop-up t
 
 ![Github Pages Pop-up](../images/Github%20-%20Pages.png)
 
-Then i could press Visit Site and one the second try everything went correctly, i now had a working website that anyone can access!
+Then i could press `Visit Site` and one the second try everything went correctly, i now had a working website that anyone can access!
 
 ### Compressing Images
