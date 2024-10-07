@@ -67,7 +67,7 @@ git config --global user.name "name"
 git config --global user.email "email@example.com"
 ```
 
-After connecting GitHub to VS Code and logging in with Git, I could finally send my page to my GitHub repository. This was done by pressing Source Control (Ctrl + Shift + G) on the sidebar, which for me looked a little something like this:
+After connecting GitHub to VS Code and logging in with Git, I could finally send my page to my GitHub repository. This was done by pressing `Source Control (Ctrl + Shift + G)` on the sidebar, which for me looked a little something like this:
 
 ![Source Control](../images/VS-Code-Git-Panel.png){: style="width:20%"}
 
@@ -127,6 +127,15 @@ After around 20 seconds, i reloaded the page and at the top there was a pop-up t
 
 ![Github Pages Pop-up](../images/Github%20-%20Pages.png)
 
-Then i could press `Visit Site` and one the second try everything went correctly, i now had a working website that anyone can access!
+Then i could press `Visit Site` and on the second try everything went correctly, i now had a working website that anyone can access!
 
 ### Compressing Images
+
+To conserve space and make sure the site loads fast i needed to compress all
+of my images. To do that i downloaded [FFmpeg](https://www.gyan.dev/ffmpeg/builds/?ref=winstall) 
+which both Frosti and Svavar recommended. To download FFmpeg i had to run this command in the terminal
+
+```
+winget install ffmpeg
+```
+
