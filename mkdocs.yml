@@ -9,8 +9,8 @@ repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-test-site
 repo_name: "Site Repo"
 theme:
   name: material
-  logo: images/FabLabLogo.svg
-  favicon: images/FabLabLogo.svg
+  logo: images/Logo/FabLabLogo.svg
+  favicon: images/Logo/FabLabLogo.svg
   icon:
     repo: simple/github
   features:

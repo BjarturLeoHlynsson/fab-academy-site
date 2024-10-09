@@ -73,37 +73,41 @@ git config --global user.email "email@example.com"
 
 After connecting GitHub to VS Code and logging in with Git, I could finally send my page to my GitHub repository. This was done by pressing `Source Control (Ctrl + Shift + G)` on the sidebar, which for me looked a little something like this:
 
-![Source Control](../images/VS-Code-Git-Panel.png){: style="width:20%"}
+![Source Control](../images/GithubPages/VS-Code-Git-Panel.jpg){: style="width:20%"}
 
-Then you just press initialize repository, choose your desired repository, and then press Commit and then Sync. Well done! Your website is now on GitHub. Afterwards, we want to get a functional website hosted, so we need to use GitHub Pages. First, open up GitHub, log in, and open up your repository. So you should be on this page:
+Then i just press initialize repository in VS Code, choose my repository, and then pressed Commit and then finally Sync. My code is now on GitHub. Afterwards, I wanted to get a functional website hosted, so i need to use GitHub Pages. To begin with i opened up GitHub, logged in, and opened up my repository. Then i was on this page:
 
-![GitHub Repository Main Page](../images/Github-Repo.png){:style="width:100%"}
+![GitHub Repository Main Page](../images/GithubPages/Github-Repo.jpg){:style="width:100%"}
 
 Then I needed to deploy my page using GitHub Pages. To configure Pages, I opened up `settings`:
 
-![GitHub Repository Settings Page](../images/Github-Repo-Settings.png){:style="width:100%"}
+![GitHub Repository Settings Page](../images/GithubPages/Settings.jpg){:style="width:100%"}
 
 In settings, I opened the `Pages` tab:
 
-![GitHub Repository Pages Page](../images/Github-Settings-Pages.png){:style="width:100%"}
+![GitHub Repository Pages Page](../images/GithubPages/Settings-Pages.jpg){:style="width:100%"}
 
 There I configured GitHub to use the main branch and told it to use the root folder which didn't work so afterwards I changed it to the docs folder which worked. That looked a little something like this:
 
-![Github Page Settings](../images/Github-Page-Settings-Wrrong.png)
+![Github Page Settings](../images/GithubPages/Page-Settings-Wrong.jpg)
 
 Then I pressed `save` and after around 20 seconds, I reloaded the page and at the top there was a pop-up that looked like this:
 
-![Github Pages Pop-up](../images/Github%20-%20Pages.png)
+![Github Pages Pop-up](../images/GithubPages/Popup.jpg)
 
 Then I could press `Visit Site` but when I checked the site it looked like this:
 
-![Not Correctly Setup up Page](../images/Wrong-Page-Setup.png)
+![Not Correctly Setup up Page](../images/GithubPages/Wrong-Mk.jpg)
 
 Which is not correct so I googled why my page looked like that, I was told that I needed to tell GitHub that this is an MKDocs site. To do that, I followed these [instructions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/), which told me I need to make a GitHub "Action". To make a GitHub Action, I went to the top bar and opened up Actions:
 
-In the Actions tab, I pressed `New workflow` then I pressed:
+In the Actions tab, I pressed  
 
-![Set up a workflow yourself](../images/Github-Workflow.png)
+![New Workflow](../images/GithubPages/New-Workflow.jpg)
+
+then I pressed:
+
+![Set up a workflow yourself](../images/GithubPages/Workflow.jpg)
 
 Once that was done, I pasted in this code:
 
@@ -143,11 +147,11 @@ and named it `MK-Docs` and then to save it I pressed `commit`.
 
 Then I went back into the `settings` tab, then `pages`, and selected gh-pages as my branch and root as my folder so it looked like this:
 
-![Github Page Settings](../images/Github-Page-Settings.png)
+![Github Page Settings](../images/GithubPages/Page-Settings.jpg)
 
 and then my page looked like this:
 
-![Correctly Setup up Page](../images/Correct-Page-Setup.png)
+![Correctly Setup up Page](../images/GithubPages/Correct-MK.jpg)
 
 **Success**! I now had a page that anyone can access and a place to document my journey!
 
@@ -214,3 +218,5 @@ To conserve space and make sure the site loads fast, I needed to compress all of
 ```bash
 winget install ffmpeg
 ```
+
+
