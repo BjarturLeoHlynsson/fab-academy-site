@@ -7,12 +7,14 @@
 
 More information can be found at [Fab Academy Schedule](https://fabacademy.org/2025/schedule.html).
 
-## Pre Fab
+## Pre Fab 
+
+This year Fab Lab Ísland decided to start fab academy a bit early so students could be more prepared and Fab Lab ísafjörur decided to host it.
+
+### Setting Up the Website on GitHub
 
 !!! Note "Info!"
     I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html) at Fab Lab Isafjörður, which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a simplified version of HTML that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
-
-### Setting Up the Website on GitHub
 
 To get started, I downloaded the following tools:
 
@@ -211,12 +213,26 @@ markdown_extensions:
 
 After making these and a few other minor adjustments like changing the icons, I was extremely pleased with the final result!
 
-### Compressing Images
+### Compressing Images and Video
 
-To conserve space and make sure the site loads fast, I needed to compress all of my images. To do that, I downloaded [FFmpeg](https://www.gyan.dev/ffmpeg/builds/?ref=winstall) which both Frosti and Svavar recommended. To download FFmpeg, I had to run this command in the terminal:
+To get started, I downloaded the following tools:
 
-```bash
-winget install ffmpeg
-```
+- [FFmpeg](https://www.gyan.dev/ffmpeg/builds/?ref=winstall)
+- [ImageMagick](https://imagemagick.org/index.php)
 
+!!! note "Installing FFmpeg"
+    There are two ways to install FFmpeg 
+    
+    A) You run this command in the terminal 
 
+    ```bash
+    winget install ffmpeg
+    ```
+
+    B) You go to the FFmpeg website linked above and download the zip.  
+
+After installing i noticed that both FFmpeg and ImageMagick don't have a GUI and then i was told that i have to use the terminal to interact with them both.
+
+## Fab Academy
+
+### Setting Up the Website on GitLab 
