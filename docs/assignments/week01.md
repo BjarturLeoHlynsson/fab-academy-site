@@ -11,7 +11,7 @@ More information can be found at [Fab Academy Schedule](https://fabacademy.org/2
 
 This year, Fab Lab Ísland decided to start Fab Academy a bit early to better prepare students, and Fab Lab Ísafjörður decided to host it.
 
-### Setting Up the Website on GitHub
+## Setting Up the Website on GitHub
 
 !!! info "Instructions and Theme"
     I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html) at Fab Lab Ísafjörður, which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
