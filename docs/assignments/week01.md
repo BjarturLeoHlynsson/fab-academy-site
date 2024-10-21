@@ -7,14 +7,14 @@
 
 More information can be found at [Fab Academy Schedule](https://fabacademy.org/2025/schedule.html).
 
-## Pre Fab 
+## Pre Fab
 
-This year Fab Lab Ísland decided to start fab academy a bit early so students could be more prepared and Fab Lab ísafjörur decided to host it.
+This year, Fab Lab Ísland decided to start Fab Academy a bit early to better prepare students, and Fab Lab Ísafjörður decided to host it.
 
 ### Setting Up the Website on GitHub
 
-!!! Note "Info!"
-    I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html) at Fab Lab Isafjörður, which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a simplified version of HTML that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
+!!! info "Instructions and Theme"
+    I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html) at Fab Lab Ísafjörður, which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 To get started, I downloaded the following tools:
 
@@ -22,8 +22,8 @@ To get started, I downloaded the following tools:
 - [Python](https://www.python.org/)
 - [Git](https://git-scm.com/)
 
-!!! note
-    In VS Code, I recommend you install [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [Markdown Extension Pack](https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack), and [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml). YAML requires a bit more setup to work with MKDocs, which you can find the instructions for [here](https://squidfunk.github.io/mkdocs-material/creating-your-site/#minimal-configuration) inside of the note: **_Recommended: configuration validation and auto-complete._**
+!!! tip "VS Code Extensions"
+    In VS Code, I recommend installing [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [Markdown Extension Pack](https://marketplace.visualstudio.com/items?itemName=bat67.markdown-extension-pack), and [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml). YAML requires a bit more setup to work with MKDocs, which you can find instructions for [here](https://squidfunk.github.io/mkdocs-material/creating-your-site/#minimal-configuration) inside of the note: **_Recommended: configuration validation and auto-complete._**
 
 After installing these tools, I created a repository on [GitHub](https://github.com/) to store my project and host the website using GitHub Pages. On my machine, I created a folder named 'Code' on my C: drive. Within the 'Code' folder, I created a subfolder to store the website files during development.
 
@@ -77,7 +77,7 @@ After connecting GitHub to VS Code and logging in with Git, I could finally send
 
 ![Source Control](../images/GithubPages/VS-Code-Git-Panel.jpg){: style="width:20%"}
 
-Then i just press initialize repository in VS Code, choose my repository, and then pressed Commit and then finally Sync. My code is now on GitHub. Afterwards, I wanted to get a functional website hosted, so i need to use GitHub Pages. To begin with i opened up GitHub, logged in, and opened up my repository. Then i was on this page:
+Then I just pressed initialize repository in VS Code, chose my repository, and then pressed Commit and finally Sync. My code was now on GitHub. Afterwards, I wanted to get a functional website hosted, so I needed to use GitHub Pages. To begin with, I opened up GitHub, logged in, and opened up my repository. Then I was on this page:
 
 ![GitHub Repository Main Page](../images/GithubPages/Github-Repo.jpg){:style="width:100%"}
 
@@ -117,32 +117,32 @@ Once that was done, I pasted in this code:
 name: MK-Docs 
 on:
   push:
-    branches:
-      - master 
-      - main
+  branches:
+    - master 
+    - main
 permissions:
   contents: write
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+    - name: Configure Git Credentials
+    run: |
+      git config user.name github-actions[bot]
+      git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+    - uses: actions/setup-python@v5
+    with:
+      python-version: 3.x
+    - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+    - uses: actions/cache@v4
+    with:
+      key: mkdocs-material-${{ env.cache_id }}
+      path: .cache
+      restore-keys: |
+      mkdocs-material-
+    - run: pip install mkdocs-material 
+    - run: mkdocs gh-deploy --force
 ```
 
 and named it `MK-Docs` and then to save it I pressed `commit`.
@@ -213,26 +213,49 @@ markdown_extensions:
 
 After making these and a few other minor adjustments like changing the icons, I was extremely pleased with the final result!
 
-### Compressing Images and Video
+## Compressing Images and Video
 
 To get started, I downloaded the following tools:
 
 - [FFmpeg](https://www.gyan.dev/ffmpeg/builds/?ref=winstall)
 - [ImageMagick](https://imagemagick.org/index.php)
 
-!!! note "Installing FFmpeg"
-    There are two ways to install FFmpeg 
-    
-    A) You run this command in the terminal 
+!!! info "Installing FFmpeg"
+    There are two ways to install FFmpeg
 
+    A) Run this command in the terminal on Windows:
+  
     ```bash
     winget install ffmpeg
     ```
 
-    B) You go to the FFmpeg website linked above and download the zip.  
+    B) Alternatively, you can download the ZIP file from the FFmpeg website linked above.
 
-After installing i noticed that both FFmpeg and ImageMagick don't have a GUI and then i was told that i have to use the terminal to interact with them both.
+After installation, I discovered that both FFmpeg and ImageMagick operate without a graphical user interface (GUI), and you must use the terminal to interact with them.
+
+### ImageMagick 
+To batch convert images, I opened the image folder in the terminal by typing CMD in the search box. Then, I used the following command to resize and compress all PNG images:
+
+```bash
+magick mogrify -resize 1000 -quality 80 -format jpg *.png
+```
+
+To convert a single image, I used this command:
+
+```bash
+magick IMAGE-NAME.png -resize 1000 -quality 80 output_image.jpg
+```
+
+!!! warning
+    If ImageMagick is not working, check if you are using the right command by replacing `convert` with `magick` if you are using either Linux or MacOS
+
+### FFmpeg
+Similarly, I optimized videos by navigating to the video folder and typing CMD to open the terminal. I then ran the following command, which can be found on [Svavar's Site](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/assignments/week01.html#video-compression-for-the-web):
+
+```bash
+ffmpeg -i input_video.mov -vcodec libx264 -crf 25 -preset veryslow -movflags +faststart -vf scale=-2:360 -c:a aac -b:a 128k output_video.mp4
+```
 
 ## Fab Academy
 
-### Setting Up the Website on GitLab 
+### Setting Up the Website on GitLab

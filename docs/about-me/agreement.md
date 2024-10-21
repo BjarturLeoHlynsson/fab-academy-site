@@ -16,7 +16,6 @@ The Fab Academy is responsible for:
 - Promoting a respectful environment free of harassment and discrimination
 - Encourage a diverse, accessible, and equitable community
 
-
 I am a Fab Academy student, responsible for:
 
 - Attending class lectures and participating in reviews
@@ -32,4 +31,4 @@ I am a Fab Academy student, responsible for:
 
 Signed by committing this file in my repository,
 
-![Signature](../images/Signature.svg){: style="width:45%"}
+![Signature](../images/Logo/Signature.svg){: style="width:45%"}
