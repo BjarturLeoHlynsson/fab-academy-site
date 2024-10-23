@@ -1,16 +1,16 @@
-# Principles and Practices
+# Website Making
 
 ## Assignment
 
-- Set up a documentation website using GitLab.
-- Plan and sketch a potential final project.
+- Set up a documentation website using GitHub.
+- Learn to compress all your images and videos
 
-More information can be found on the [Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/0-yfirlit/). Please note that the site is all in icelandic.
+More information can be found on the [🇮🇸 Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/). 
 
 ## Setting Up the Website on GitHub
 
 !!! info "Instructions and Theme"
-    I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html) at Fab Lab Ísafjörður, which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
+    I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by my instructor [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html), which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 To get started, I downloaded the following tools:
 
@@ -225,7 +225,7 @@ To get started, I downloaded the following tools:
     winget install ffmpeg
     ```
 
-    B) Alternatively, you can download the ZIP file from the FFmpeg website linked above.
+   B) Alternatively, you can download the ZIP file from the FFmpeg website linked above.
 
 After installation, I discovered that both FFmpeg and ImageMagick operate without a graphical user interface (GUI), and you must use the terminal to interact with them.
 
@@ -243,7 +243,7 @@ magick IMAGE-NAME.png -resize 1000 -quality 80 output_image.jpg
 ```
 
 !!! warning
-    If ImageMagick is not working, check if you are using the right command by replacing `convert` with `magick` if you are using either Linux or MacOS
+  If ImageMagick is not working, check if you are using the right command by replacing `convert` with `magick` if you are using either Linux or MacOS
 
 ### FFmpeg
 Similarly, I optimized videos by navigating to the video folder and typing CMD to open the terminal. I then ran the following command, which can be found on [Svavar's Site](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/assignments/week01.html#video-compression-for-the-web):
@@ -251,3 +251,23 @@ Similarly, I optimized videos by navigating to the video folder and typing CMD t
 ```bash
 ffmpeg -i input_video.mov -vcodec libx264 -crf 25 -preset veryslow -movflags +faststart -vf scale=-2:360 -c:a aac -b:a 128k output_video.mp4
 ```
+
+## Last Words
+
+This week was very interesting. I learned about how to use Git and GitHub and MKDocs Material which I am loving as a website maker. This week thought me a lot and i am very happy with my website.
+
+### Design Files
+
+- None
+
+### Important Links
+
+- [GitHub Pages](https://pages.github.com/)
+
+### Software I used
+
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Python](https://www.python.org/)
+- [ImageMagick](https://imagemagick.org/index.php)
+- [FFmpeg](https://ffmpeg.org/)
