@@ -5,11 +5,7 @@
 - Set up a documentation website using GitLab.
 - Plan and sketch a potential final project.
 
-More information can be found at [Fab Academy Schedule](https://fabacademy.org/2025/schedule.html).
-
-## Pre Fab
-
-This year, Fab Lab Ísland decided to start Fab Academy a bit early to better prepare students, and Fab Lab Ísafjörður decided to host it.
+More information can be found on the [Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/0-yfirlit/). Please note that the site is all in icelandic.
 
 ## Setting Up the Website on GitHub
 
@@ -255,7 +251,3 @@ Similarly, I optimized videos by navigating to the video folder and typing CMD t
 ```bash
 ffmpeg -i input_video.mov -vcodec libx264 -crf 25 -preset veryslow -movflags +faststart -vf scale=-2:360 -c:a aac -b:a 128k output_video.mp4
 ```
-
-## Fab Academy
-
-### Setting Up the Website on GitLab
