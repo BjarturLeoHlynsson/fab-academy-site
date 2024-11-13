@@ -25,7 +25,7 @@ To get started, I downloaded the following tools:
 
 We were instructed to watch a YouTube series from Fab Lab Reykjavík, which is linked [here 🇮🇸](https://www.youtube.com/playlist?list=PLs4ifnZzVJmqaSM1lsg68vPVtJxVNhVwV).
 
-After installing these tools, I started by opening KiCad and creating a project folder. Then, I made a project in KiCad and opened the Schematic Editor.
+After installing these tools, I started by creating a project folder. Then, I opened KiCad, made a project and opened the Schematic Editor.
 
 ### The Schematic Editor
 
@@ -39,3 +39,6 @@ I began by adding the following components:
 - **L_1206**
 - **Conn_PinHeader_1x03**
 
+After adding the components, I started by connecting all of them together and then labeled everything. Then, I changed the paper to A5 and labeled it. Finally, I had something that looked like this:
+
+![KiCad Schematic Editor](../images/KiCad/SchDonepng.png)
