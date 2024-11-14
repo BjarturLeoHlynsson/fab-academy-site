@@ -13,6 +13,7 @@ To get started, I downloaded the following tools:
 
 - [KiCad](https://www.kicad.org/)
 - [Fab Electronics Library](https://gitlab.fabcloud.org/pub/libraries/electronics/kicad)
+- [Inkscape](https://inkscape.org/)
 
 !!! Tip "Installing Fab Electronics Library in KiCad"
 	On the GitLab repo, there are installation instructions:
@@ -42,3 +43,24 @@ I began by adding the following components:
 After adding the components, I started by connecting all of them together and then labeled everything. Then, I changed the paper to A5 and labeled it. Finally, I had something that looked like this:
 
 ![KiCad Schematic Editor](../images/KiCad/SchDonepng.png)
+
+### The PCB Editor
+
+Next I opened up the pcb Editor and synced my Schematic to the editor by pressing this button:
+
+![]()
+
+Then I arranged the components and started by connecting them together following the labels I had made in the Schematic editor. So I had this:
+
+![]()
+
+To finish, I placed a square outline to tell the computer how large the board was supposed to be. Then I had this which I could use to make the board.
+
+![]()
+
+Lastly, as a secondary task, I opened up the 3D viewer and assigned all the components 3D models so I could use that as a reference.
+
+![]()
+
+### Exporting and Inkscape
+
