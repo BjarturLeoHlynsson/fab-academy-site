@@ -7,7 +7,7 @@
 
 More information can be found on the [🇮🇸 Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/2-rafrasasmidi/).
 
-### Installing Kicad
+### Installing KiCad
 
 To get started, I downloaded the following tools:
 
@@ -26,7 +26,7 @@ To get started, I downloaded the following tools:
 
 We were instructed to watch a YouTube series from Fab Lab Reykjavík, which is linked [here 🇮🇸](https://www.youtube.com/playlist?list=PLs4ifnZzVJmqaSM1lsg68vPVtJxVNhVwV).
 
-After installing these tools, I started by creating a project folder. Then, I opened KiCad, made a project and opened the Schematic Editor.
+After installing these tools, I started by creating a project folder. Then, I opened KiCad, made a project, and opened the Schematic Editor.
 
 ### The Schematic Editor
 
@@ -40,27 +40,28 @@ I began by adding the following components:
 - **L_1206**
 - **Conn_PinHeader_1x03**
 
-After adding the components, I started by connecting all of them together and then labeled everything. Then, I changed the paper to A5 and labeled it. Finally, I had something that looked like this:
+After adding the components, I connected all of them together and labeled everything. Then, I changed the paper to A5 and labeled it. Finally, I had something that looked like this:
 
 ![KiCad Schematic Editor](../images/KiCad/SchDonepng.png)
 
 ### The PCB Editor
 
-Next I opened up the pcb Editor and synced my Schematic to the editor by pressing this button:
+Next, I opened the PCB Editor and synced my schematic to the editor by pressing this button:
 
 ![]()
 
-Then I arranged the components and started by connecting them together following the labels I had made in the Schematic editor. So I had this:
+Then, I arranged the components and started connecting them together following the labels I had made in the Schematic Editor. So I had this:
 
 ![]()
 
-To finish, I placed a square outline to tell the computer how large the board was supposed to be. Then I had this which I could use to make the board.
+To finish, I placed a square outline to tell the computer how large the board was supposed to be. Then, I had this which I could use to make the board.
 
 ![]()
 
-Lastly, as a secondary task, I opened up the 3D viewer and assigned all the components 3D models so I could use that as a reference.
+Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference.
 
 ![]()
 
 ### Exporting and Inkscape
 
+Next, I had to export my KiCad board so I could mill it using the circuit mill.
