@@ -218,7 +218,7 @@ To get started, I downloaded the following tools:
 
 !!! info "Installing FFmpeg"
     There are two ways to install FFmpeg
-    
+
     A) Run this command in the terminal on Windows:
 
     ```bash
@@ -243,7 +243,7 @@ magick IMAGE-NAME.png -resize 1000 -quality 80 output_image.jpg
 ```
 
 !!! warning
-  If ImageMagick is not working, check if you are using the right command by replacing `convert` with `magick` if you are using either Linux or MacOS
+    If ImageMagick is not working, check if you are using the right command by replacing `convert` with `magick` if you are using either Linux or MacOS
 
 ### FFmpeg
 Similarly, I optimized videos by navigating to the video folder and typing CMD to open the terminal. I then ran the following command, which can be found on [Svavar's Site](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/assignments/week01.html#video-compression-for-the-web):
