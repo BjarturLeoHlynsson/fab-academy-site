@@ -218,14 +218,14 @@ To get started, I downloaded the following tools:
 
 !!! info "Installing FFmpeg"
     There are two ways to install FFmpeg
-
+    
     A) Run this command in the terminal on Windows:
-  
+
     ```bash
     winget install ffmpeg
     ```
 
-   B) Alternatively, you can download the ZIP file from the FFmpeg website linked above.
+    B) Alternatively, you can download the ZIP file from the FFmpeg website linked above.
 
 After installation, I discovered that both FFmpeg and ImageMagick operate without a graphical user interface (GUI), and you must use the terminal to interact with them.
 
