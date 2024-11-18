@@ -1,18 +1,25 @@
-# Code Borrowed from Fabisa.is and Svavar Konradarspns Fab Academy Site.
-# Fabisa: https://github.com/fablabisastaff/fabisa_site/blob/main/mkdocs.yml
-# Svavar: https://gitlab.fabcloud.org/academany/fabacademy/2023/labs/isafjordur/students/svavar-konradsson/-/blob/main/mkdocs.yml?ref_type=heads
-
+# Site Information
 site_name: Bjartur's Fab Academy Journey 
 site_url: https://fab-lab-bjartur.tech/
-
 repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-site
 repo_name: "Site Repo"
+
+# Theme Configuration
 theme:
   name: material
+  
+  # Branding
   logo: images/Logo/FabLabLogo.svg
   favicon: images/Logo/FabLabLogo.svg
   icon:
     repo: simple/github
+
+  # Typography
+  font:
+    text: Roboto 
+    code: Roboto Mono  
+
+  # UI Features
   features:
     - content.code.copy
     - content.code.annotate
@@ -20,43 +27,58 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+
+  # Color Schemes
   palette:
-    - media: "(prefers-color-scheme: light)"  # Toggle for light mode
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle: 
         icon: material/lightbulb
         name: Switch to dark mode
       primary: black
       accent: red
-    - media: "(prefers-color-scheme: dark)"   # Toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
       primary: black 
       accent: red 
-  font:
-    text: Roboto 
-    code: Roboto Mono  
 
+# Markdown Processing
 markdown_extensions:
-  - pymdownx.snippets
-  - pymdownx.keys
+  # Code Features
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.keys
+
+  # Content Features
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details
   - admonition
   - attr_list
   - md_in_html
+
+  # Special Features
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tasklist:
       custom_checkbox: true
 
+# Additional Features
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BjarturLeoHlynsson
+      name: Github
+
+plugins:
+  - search
+  - tags
 
 nav:
   - Home: index.md
