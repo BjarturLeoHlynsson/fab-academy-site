@@ -14,11 +14,13 @@ theme:
   icon:
     repo: simple/github
   features:
+    - content.code.copy
     - content.code.annotate
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+    - content.action.view
   palette:
     - media: "(prefers-color-scheme: light)"  # Toggle for light mode
       scheme: default
