@@ -31,7 +31,7 @@ jobs:
       - run: mkdocs gh-deploy --force --clean
       - name: Preserve CNAME
         run: |
-          echo "yourdomain.com" > CNAME
+          echo "fab-lab-bjartur.tech" > CNAME
           git add CNAME
           git commit -m "Preserve CNAME"
           git push
