@@ -20,7 +20,6 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
-    - content.action.view
   palette:
     - media: "(prefers-color-scheme: light)"  # Toggle for light mode
       scheme: default
