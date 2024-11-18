@@ -3,9 +3,9 @@
 # Svavar: https://gitlab.fabcloud.org/academany/fabacademy/2023/labs/isafjordur/students/svavar-konradsson/-/blob/main/mkdocs.yml?ref_type=heads
 
 site_name: Bjartur's Fab Academy Journey 
-site_url: https://bjarturleohlynsson.github.io/fab-academy-test-site/
+site_url: https://fab-lab-bjartur.tech/
 
-repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-test-site
+repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-site
 repo_name: "Site Repo"
 theme:
   name: material
