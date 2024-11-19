@@ -58,10 +58,14 @@ To finish, I placed a square outline to tell the computer how large the board wa
 
 ![]()
 
-Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference.
+Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference to model a case or something similar in FreeCad
 
 ![]()
 
 ### Exporting and Inkscape
 
-Next, I had to export my KiCad board so I could mill it using the circuit mill.
+Next, I had to export my KiCad board so I could mill it using the circuit mill. I went into export and selected F_CU and (B) and then exported it as an SVG. Then i did it again but now i only selected Edge_cuts. Now i had two svg files that looked like this:
+
+![F_CU](/docs/images/KiCad/Project1-F_Cu.svg)
+
+![Edge_Cuts](/docs/images/KiCad/Project1-Edge_Cuts.svg)
