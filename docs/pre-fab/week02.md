@@ -45,6 +45,8 @@ After adding the components, I connected all of them together and labeled everyt
 
 ### The PCB Editor
 
+**(Needs images)**
+
 Next, I opened the PCB Editor and synced my schematic to the editor by pressing this button:
 
 ![]()
@@ -59,7 +61,7 @@ To finish, I placed a square outline to tell the computer how large the board wa
 
 Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference to model a case or something similar in FreeCAD.
 
-![3D Viewer](../images/KiCad/3DViewer.png)
+![]()
 
 ### Exporting and Inkscape
 
