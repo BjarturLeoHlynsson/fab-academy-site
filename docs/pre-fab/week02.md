@@ -1,5 +1,4 @@
 # Electronics Design and Production
-
 ## Assignment
 
 - Use KiCad to design a development board to interact and communicate with an embedded microcontroller.
@@ -58,14 +57,17 @@ To finish, I placed a square outline to tell the computer how large the board wa
 
 ![]()
 
-Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference to model a case or something similar in FreeCad
+Lastly, as a secondary task, I opened the 3D viewer and assigned all the components 3D models so I could use that as a reference to model a case or something similar in FreeCAD.
 
-![]()
+![3D Viewer](../images/KiCad/3DViewer.png)
 
 ### Exporting and Inkscape
 
-Next, I had to export my KiCad board so I could mill it using the circuit mill. I went into export and selected F_CU and (B) and then exported it as an SVG. Then i did it again but now i only selected Edge_cuts. Now i had two svg files that looked like this:
+Next, I had to export my KiCad board so I could mill it using the circuit mill. I went into export and selected F_CU and exported it as an SVG. Then I did it again but now I only selected Edge_Cuts. Now I had two SVG files that looked like this:
 
-![F_CU](/docs/images/KiCad/Project1-F_Cu.svg)
+![F_CU](../images/KiCad/F_Cu.png){ width="335" }
+![Edge_Cuts](../images/KiCad/Edge_Cuts.jpg){ width="335" }
 
-![Edge_Cuts](/docs/images/KiCad/Project1-Edge_Cuts.svg)
+The second image does include a line around the edge but it is only visible in light mode. Next, I opened up Inkscape and inverted the colors so white was black and black was white. Now I could export it again and I was ready to mill!
+
+### Milling
