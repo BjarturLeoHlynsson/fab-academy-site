@@ -5,12 +5,12 @@
 - Set up a documentation website using GitHub.
 - Learn to compress all your images and videos
 
-More information can be found on the [🇮🇸 Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/). 
+More information can be found on the [:flag_is: Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/). 
 
 ## Setting Up the Website on GitHub
 
 !!! info "Instructions and Theme"
-    I followed these [instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by my instructor [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html), which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
+    I followed these [:flag_is: instructions](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/1-heimasidugerd/) provided by my instructor [Svavar Konráðsson](https://fabacademy.org/2023/labs/isafjordur/students/svavar-konradsson/index.html), which were very helpful in setting up [MKDocs](https://www.mkdocs.org/). MKDocs is a static site generator that uses Markdown. There are numerous themes available, but I decided to use the [Material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 To get started, I downloaded the following tools:
 

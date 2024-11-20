@@ -4,7 +4,7 @@
 - Use KiCad to design a development board to interact and communicate with an embedded microcontroller.
 - Make and test the development board you designed.
 
-More information can be found on the [🇮🇸 Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/2-rafrasasmidi/).
+More information can be found on the [:flag_is: Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/2-rafrasasmidi/).
 
 ### Installing KiCad
 
@@ -23,7 +23,7 @@ To get started, I downloaded the following tools:
 	- Go to "Preferences / Manage Symbol Libraries" and add fab.kicad_sym as a symbol library.
 	- Go to "Preferences / Manage Footprint Libraries" and add fab.pretty as a footprint library.
 
-We were instructed to watch a YouTube series from Fab Lab Reykjavík, which is linked [here 🇮🇸](https://www.youtube.com/playlist?list=PLs4ifnZzVJmqaSM1lsg68vPVtJxVNhVwV).
+We were instructed to watch a YouTube series from Fab Lab Reykjavík, which is linked [:flag_is: here](https://www.youtube.com/playlist?list=PLs4ifnZzVJmqaSM1lsg68vPVtJxVNhVwV).
 
 After installing these tools, I started by creating a project folder. Then, I opened KiCad, made a project, and opened the Schematic Editor.
 
