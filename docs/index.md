@@ -1,8 +1,18 @@
-# Bjartur's Fab Academy Journey 
-
-(INSERT IMAGE HERE!)
-
-## Welcome to my Fab Academy Site!
-
-Hello and Welcome, My name is Bjartur Leó Hlynsson and this is the documentation site for my time at Fab Academy 2025
-
+---
+template: home.html
+title: Forsíða
+theme:
+  font:
+    text: Roboto
+hide:
+  - navigation
+  - toc
+  - path
+  - header
+  - main
+  - title
+  - nav
+  - logo
+  - tabs
+---
+#
