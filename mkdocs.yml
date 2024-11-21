@@ -11,6 +11,7 @@ repo_name: "Site Repo"
 # Theme Configuration
 theme:
   name: material
+  custom_dir: overrides
   
   # Branding
   logo: images/Logo/FabLabLogo.svg
