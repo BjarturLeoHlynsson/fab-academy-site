@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Forsíða
+title: Home
 theme:
   font:
     text: Roboto
