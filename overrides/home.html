@@ -16,12 +16,46 @@
 {% block tabs %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
- 
+
+  /* Application header should be static for the landing page */
+  .md-header {
+	position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+	margin: 0;
+  }
+
+  /* Hide main content for now */
+  .md-content {
+	display: none;
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+	.md-sidebar--secondary {
+	  display: none;
+	}
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+	.md-sidebar--primary {
+	  display: none;
+	}
 <style>
 @import url("https://use.fontawesome.com/releases/v6.6.0/css/all.css");
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Landing */
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
 
 	/* Landing */
 	
@@ -527,28 +561,4 @@
   <script src="/javascripts/util.js"></script>  
 
 {% endblock %}
-{% block footer %}
-<footer class="md-footer">
-    <div class="md-footer-meta md-typeset">
-        <div class="md-footer-meta__inner md-grid">
-            <!-- Copyright and theme information -->
-            <div class="md-footer-copyright">
-                {% if config.copyright %}
-                <div class="md-footer-copyright__highlight">
-                    {{ config.copyright }}
-                </div>
-                {% endif %}
-                powered by
-                <a href="https://www.mkdocs.org" title="MkDocs">MkDocs</a>
-                and
-                <a href="https://squidfunk.github.io/mkdocs-material/"
-                   title="Material for MkDocs">
-                    Material for MkDocs</a>
-            </div>
-            {% block social %}
-            {% include "partials/social.html" %}
-            {% endblock %}
-        </div>
-    </div>
-</footer>
-{% endblock %}
+{% block footer %}{% endblock %}
