@@ -1,4 +1,4 @@
-name: MK-Docs 
+name: ci 
 on:
   push:
     branches:
