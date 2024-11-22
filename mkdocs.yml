@@ -95,6 +95,7 @@ plugins:
   - search
   - tags
 
+
 extra_javascript:
   - javascripts/jquery.min.js
   - javascripts/jquery.scrollex.min.js

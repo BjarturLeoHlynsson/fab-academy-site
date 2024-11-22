@@ -1,4 +1,19 @@
 ---
 template: home.html
-title: Home
+title: Forsíða
+theme:
+  font:
+    text: Roboto
+hide:
+  - navigation
+  - toc
+  - path
+  - header
+  - main
+  - title
+  - nav
+  - logo
+  - tabs
+  - footer
 ---
+#
