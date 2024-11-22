@@ -3,7 +3,8 @@ template: home.html
 title: Home
 theme:
   font:
-    text: Roboto
+    text: Roboto 
+    code: Roboto Mono  
 hide:
   - navigation
   - toc
@@ -15,5 +16,6 @@ hide:
   - logo
   - tabs
   - footer
+
 ---
 #
