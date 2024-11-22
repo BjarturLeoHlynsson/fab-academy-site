@@ -14,5 +14,6 @@ hide:
   - nav
   - logo
   - tabs
+  - footer
 ---
 #
