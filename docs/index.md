@@ -1,21 +1,8 @@
----
-template: home.html
-title: Home
-theme:
-  font:
-    text: Roboto 
-    code: Roboto Mono  
-hide:
-  - navigation
-  - toc
-  - path
-  - header
-  - main
-  - title
-  - nav
-  - logo
-  - tabs
-  - footer
+# Bjartur's Fab Academy Journey 
 
----
-#
+(INSERT IMAGE HERE!)
+
+## Welcome to my Fab Academy Site!
+
+Hello and Welcome, My name is Bjartur Leó Hlynsson and this is the documentation site for my time at Fab Academy 2025
+

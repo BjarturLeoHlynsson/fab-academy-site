@@ -11,7 +11,6 @@ repo_name: "Github Repository"
 # Theme Configuration
 theme:
   name: material
-  custom_dir: overrides
   
   # Branding
   logo: images/Logo/FabLabLogo.svg
@@ -94,17 +93,6 @@ extra:
 plugins:
   - search
   - tags
-
-extra_javascript:
-  - javascripts/jquery.min.js
-  - javascripts/jquery.scrollex.min.js
-  - javascripts/jquery.scrolly.min.js
-  - javascripts/browser.min.js
-  - javascripts/breakpoints.min.js
-  - javascripts/main.js
-  - javascripts/util.js
-  - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
   - Home: index.md
