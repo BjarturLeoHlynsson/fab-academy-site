@@ -548,7 +548,11 @@ input, select, textarea {
 <script src="/javascripts/util.js"></script>
 
 <style>
-.md-main { display: none; }
+@media screen and (min-width: 800px) {
+	.md-main {
+		display: none; 
+	}
+}
 </style>
 
 {% endblock %}
