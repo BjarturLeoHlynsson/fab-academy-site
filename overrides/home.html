@@ -1,41 +1,26 @@
-{#-
-  This file was automatically generated - do not edit
--#}
+<!--This file was made using parts of HTML5UP template Spectral and Fabisa.is main page--> 
+<!--Huge Thanks to Doddi for pointing me in the right direction!-->
+
+{#- This file was automatically generated - do not edit -#}
 {% extends "base.html" %}
 
 {% block extrahead %}
+
   {{ super() }}
+  
   <style>
-    .md-header {
-      font-family: inherit !important;
-	  letter-spacing: normal; /* or specific value like 0.5px */
-    }
-    .md-header__title {
-      font-family: inherit !important;
-	  letter-spacing: normal; /* or specific value like 0.5px */
-    }
-    .md-header__topic {
-      font-family: inherit !important;
-	  letter-spacing: normal; /* or specific value like 0.5px */
-    }
-	    /* Search bar styles */
-		.md-search__input {
+	
+    /* Global font overrides */
+    .md-header,
+    .md-header__title,
+    .md-header__topic,
+    .md-search__input,
+    .md-search__output,
+    .md-tabs__item,
+    .md-tabs__link {
       font-family: inherit !important;
       letter-spacing: normal !important;
     }
-    .md-search__output {
-      font-family: inherit !important;
-      letter-spacing: normal !important;
-    }
-	  /* Navigation items */
-	  .md-tabs__item {
-    font-family: inherit !important;
-    letter-spacing: normal !important;
-  }
-  .md-tabs__link {
-    font-family: inherit !important;
-    letter-spacing: normal !important;
-  }
   </style>
 {% endblock %}
 
@@ -44,18 +29,29 @@
 {% endblock %}
 
 {% block tabs %}
-  <!-- Add scripts that need to run before here -->
   {{ super() }}
 
 <style>
+/* Imports */
 @import url("https://use.fontawesome.com/releases/v6.6.0/css/all.css");
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Base styles */
+body {
+    background: #2e3842;
+    color: #AAA;
+    font-family: "Roboto", sans-serif;
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.65em;
+}
+
 /* Landing */
 body.landing #page-wrapper {
-    background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
-    background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+    background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ base_url }}/assets/images/fab_eyjar-scale.jpg");
+    background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ base_url }}/assets/images/fab_eyjar-scale.jpg");
     background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
     background-attachment: fixed;
@@ -532,33 +528,27 @@ input, select, textarea {
 
 </style>
 
-  <!-- Page Wrapper -->
-  <div id="page-wrapper">
-    <!-- Banner -->
-    <section id="banner">
-      <div class="inner">
-        <h1>Welcome to</h1>
-        <h2>Bjartur's Fab Academy <br> documentation site!</h2>
-        <h5></h5>
-      </div>
-    </section>
-  </div>
+<div id="page-wrapper">
+  <section id="banner">
+    <div class="inner">
+      <h1>Welcome to</h1>
+      <h2>Bjartur's Fab Academy <br> documentation site!</h2>
+      <h5></h5>
+    </div>
+  </section>
+</div>
 
-  <!-- Scripts -->
-  <script src="/javascripts/jquery.min.js"></script>
-  <script src="/javascripts/jquery.scrollex.min.js"></script>
-  <script src="/javascripts/jquery.scrolly.min.js"></script>
-  <script src="/javascripts/browser.min.js"></script>
-  <script src="/javascripts/breakpoints.min.js"></script>
-  <script src="/javascripts/main.js"></script>
-  <script src="/javascripts/util.js"></script>  
-
+<!-- Scripts -->
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/jquery.scrollex.min.js"></script>
+<script src="/javascripts/jquery.scrolly.min.js"></script>
+<script src="/javascripts/browser.min.js"></script>
+<script src="/javascripts/breakpoints.min.js"></script>
+<script src="/javascripts/main.js"></script>
+<script src="/javascripts/util.js"></script>
 
 <style>
-.md-main
-{
-	display: none;
-}
+.md-main { display: none; }
 </style>
 
 {% endblock %}
