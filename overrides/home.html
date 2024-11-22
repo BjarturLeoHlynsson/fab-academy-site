@@ -1,0 +1,528 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <body class="landing is-preload">
+    {{ super() }}
+  </body>
+{% endblock %}
+
+{% block tabs %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+ 
+<style>
+@import url("https://use.fontawesome.com/releases/v6.6.0/css/all.css");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Landing */
+
+	/* Landing */
+	
+	body.landing #page-wrapper {
+			background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-attachment: fixed;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-top: 0;
+		}
+	
+		body.landing #footer {
+			background-color: rgba(29, 36, 42, 0.9);
+		}
+	
+		body.is-mobile.landing #page-wrapper {
+			background: none;
+		}
+	
+		body.is-mobile.landing #banner,
+		body.is-mobile.landing .wrapper.style4 {
+			background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	
+		body.is-mobile.landing #footer {
+			background-color: #1d242a;
+		}
+	
+	/* Banner */
+	
+		#banner {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			cursor: default;
+			height: 100vh;
+			min-height: 35em;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+		}
+	
+			#banner h2 {
+				-moz-transform: scale(1);
+				-webkit-transform: scale(1);
+				-ms-transform: scale(1);
+				transform: scale(1);
+				-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+				display: inline-block;
+				font-size: 1.75em;
+				opacity: 1;
+				padding: 0.35em 1em;
+				position: relative;
+				z-index: 1;
+			}
+	
+				#banner h2:before, #banner h2:after {
+					-moz-transition: width 0.85s ease;
+					-webkit-transition: width 0.85s ease;
+					-ms-transition: width 0.85s ease;
+					transition: width 0.85s ease;
+					-moz-transition-delay: 0.25s;
+					-webkit-transition-delay: 0.25s;
+					-ms-transition-delay: 0.25s;
+					transition-delay: 0.25s;
+					background: #fff;
+					content: '';
+					display: block;
+					height: 2px;
+					position: absolute;
+					width: 100%;
+				}
+	
+				#banner h2:before {
+					top: 0;
+					left: 0;
+				}
+	
+				#banner h2:after {
+					bottom: 0;
+					right: 0;
+				}
+	
+			#banner p {
+				letter-spacing: 0.225em;
+				text-transform: uppercase;
+			}
+	
+				#banner p a {
+					color: inherit;
+				}
+	
+			#banner .more {
+				-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+				-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+				-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+				transition: transform 0.75s ease, opacity 0.75s ease;
+				-moz-transition-delay: 3.5s;
+				-webkit-transition-delay: 3.5s;
+				-ms-transition-delay: 3.5s;
+				transition-delay: 3.5s;
+				-moz-transform: translateY(0);
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+				border: none;
+				bottom: 0;
+				color: inherit;
+				font-size: 0.8em;
+				height: 8.5em;
+				left: 50%;
+				letter-spacing: 0.225em;
+				margin-left: -8.5em;
+				opacity: 1;
+				outline: 0;
+				padding-left: 0.225em;
+				position: absolute;
+				text-align: center;
+				text-transform: uppercase;
+				width: 16em;
+				z-index: 1;
+			}
+	
+				#banner .more:after {
+					background-image: url("assets/img/images/arrow.svg");
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					bottom: 10em;
+					content: '';
+					display: block;
+					height: 1.5em;
+					left: 50%;
+					margin: 0 0 0 -0.75em;
+					position: absolute;
+					width: 1.5em;
+				}
+	
+			#banner:after {
+				pointer-events: none;
+				-moz-transition: opacity 3s ease-in-out;
+				-webkit-transition: opacity 3s ease-in-out;
+				-ms-transition: opacity 3s ease-in-out;
+				transition: opacity 3s ease-in-out;
+				-moz-transition-delay: 0.3s;
+				-webkit-transition-delay: 0.3s;
+				-ms-transition-delay: 0.3s;
+				transition-delay: 0.3s;
+				content: '';
+				background: #2e3842;
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0;
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				#banner {
+					padding: 7em 3em 5em 3em ;
+					height: auto;
+					min-height: 0;
+				}
+	
+					#banner h2 {
+						font-size: 1.25em;
+					}
+	
+					#banner br {
+						display: none;
+					}
+	
+					#banner .more {
+						display: none;
+					}
+	
+			}
+	
+		body.is-preload #banner h2 {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			opacity: 0;
+		}
+	
+			body.is-preload #banner h2:before, body.is-preload #banner h2:after {
+				width: 0;
+			}
+	
+		body.is-preload #banner .more {
+			-moz-transform: translateY(8.5em);
+			-webkit-transform: translateY(8.5em);
+			-ms-transform: translateY(8.5em);
+			transform: translateY(8.5em);
+			opacity: 0;
+		}
+	
+		body.is-preload #banner:after {
+			opacity: 1;
+		}
+	/* Image */
+
+	.image {
+			border-radius: 3px;
+			border: 0;
+			display: inline-block;
+			position: relative;
+		}
+	
+			.image img {
+				border-radius: 3px;
+				display: block;
+			}
+	
+			.image.left {
+				float: left;
+				margin: 0 2em 2em 0;
+				top: 0.25em;
+			}
+	
+			.image.right {
+				float: right;
+				margin: 0 0 2em 2em;
+				top: 0.25em;
+			}
+	
+			.image.left, .image.right {
+				max-width: 40%;
+			}
+	
+				.image.left img, .image.right img {
+					width: 100%;
+				}
+	
+			.image.fit {
+				display: block;
+				margin: 0 0 2em 0;
+				width: 100%;
+			}
+	
+				.image.fit img {
+					width: 100%;
+				}
+
+	/* Body */
+
+				body {
+			background: #2e3842;
+		}
+	
+			body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+				-moz-animation: none !important;
+				-webkit-animation: none !important;
+				-ms-animation: none !important;
+				animation: none !important;
+				-moz-transition: none !important;
+				-webkit-transition: none !important;
+				-ms-transition: none !important;
+				transition: none !important;
+			}
+	
+		body, input, select, textarea {
+			color: #AAA;
+			font-family: "Roboto", sans-serif;
+			font-size: 15pt;
+			font-weight: 400;
+			letter-spacing: 0.075em;
+			line-height: 1.65em;
+		}
+	
+			@media screen and (max-width: 1680px) {
+	
+				body, input, select, textarea {
+					font-size: 13pt;
+				}
+	
+			}
+	
+			@media screen and (max-width: 1280px) {
+	
+				body, input, select, textarea {
+					font-size: 12pt;
+				}
+	
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				body, input, select, textarea {
+					font-size: 11pt;
+					letter-spacing: 0.0375em;
+				}
+	
+			}
+	
+			a:hover {
+				border-bottom-color: transparent;
+			}
+	
+		strong, b {
+			color: #fff;
+			font-weight: 600;
+		}
+	
+		em, i {
+			font-style: italic;
+		}
+	
+		p {
+			margin: 0 0 2em 0;
+		}
+	
+		h1, h2, h3, h4, h5, h6 {
+			color: #fff;
+			font-weight: 800;
+			letter-spacing: 0.225em;
+			line-height: 1em;
+			margin: 0 0 1em 0;
+			text-transform: uppercase;
+		}
+	
+			h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+				color: inherit;
+				text-decoration: none;
+			}
+	
+		h2 {
+			font-size: 1.35em;
+			line-height: 1.75em;
+		}
+	
+			@media screen and (max-width: 736px) {
+	
+				h2 {
+					font-size: 1.1em;
+					line-height: 1.65em;
+				}
+	
+			}
+	
+		h3 {
+			font-size: 1.15em;
+			line-height: 1.75em;
+		}
+	
+			@media screen and (max-width: 736px) {
+	
+				h3 {
+					font-size: 1em;
+					line-height: 1.65em;
+				}
+	
+			}
+	
+		h4 {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+	
+		h5 {
+			font-size: 0.8em;
+			line-height: 1.5em;
+		}
+	
+		h6 {
+			font-size: 0.7em;
+			line-height: 1.5em;
+		}
+	
+		sub {
+			font-size: 0.8em;
+			position: relative;
+			top: 0.5em;
+		}
+	
+		sup {
+			font-size: 0.8em;
+			position: relative;
+			top: -0.5em;
+		}
+	
+		hr {
+			border: 0;
+			border-bottom: solid 2px #fff;
+			margin: 3em 0;
+		}
+	
+			hr.major {
+				margin: 4.5em 0;
+			}
+	
+	
+		.align-left {
+			text-align: left;
+		}
+	
+		.align-center {
+			text-align: center;
+		}
+	
+		.align-right {
+			text-align: right;
+		}
+	
+	
+	/* Main */
+
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;}
+	
+	body {
+		line-height: 1;
+	}
+	
+	ol, ul {
+		list-style: none;
+	}
+	
+	blockquote, q {
+		quotes: none;
+	}
+	
+		blockquote:before, blockquote:after, q:before, q:after {
+			content: '';
+			content: none;
+		}
+	
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	body {
+		-webkit-text-size-adjust: none;
+	}
+	
+	mark {
+		background-color: transparent;
+		color: inherit;
+	}
+	
+	input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	
+	input, select, textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+	}
+	
+
+</style>
+
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h1>Welcome to</h1>
+        <h2>Bjartur's Fab Academy <br> documentation site!</h2>
+        <h5>Lorem Ipsum</h5>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/docs/javascripts/jquery.min.js"></script>
+  <script src="/docs/javascripts/jquery.scrollex.min.js"></script>
+  <script src="/docs/javascripts/jquery.scrolly.min.js"></script>
+  <script src="/docs/javascripts/browser.min.js"></script>
+  <script src="/docs/javascripts/breakpoints.min.js"></script>
+  <script src="/docs/javascripts/main.js"></script>
+  <script src="/docs/javascripts/util.js"></script>  
+{% endblock %}
