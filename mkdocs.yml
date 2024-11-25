@@ -94,6 +94,7 @@ extra:
 plugins:
   - search
   - tags
+  - git-revision-date-localized
 
 
 extra_javascript:
