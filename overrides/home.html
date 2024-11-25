@@ -50,8 +50,8 @@ body {
 
 /* Landing */
 body.landing #page-wrapper {
-    background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ base_url }}/assets/images/fab_eyjar-scale.jpg");
-    background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ base_url }}/assets/images/fab_eyjar-scale.jpg");
+    background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
+    background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
     background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/fab_eyjar-scale.jpg");
     background-attachment: fixed;
@@ -540,15 +540,17 @@ input, select, textarea {
 
 <!-- Scripts -->
 <script src="/javascripts/jquery.min.js"></script>
-<script src="/javascripts/jquery.scrollex.min.js"></script>
-<script src="/javascripts/jquery.scrolly.min.js"></script>
 <script src="/javascripts/browser.min.js"></script>
 <script src="/javascripts/breakpoints.min.js"></script>
 <script src="/javascripts/main.js"></script>
 <script src="/javascripts/util.js"></script>
 
 <style>
-.md-main { display: none; }
+@media screen and (min-width: 800px) {
+	.md-main {
+		display: none; 
+	}
+}
 </style>
 
 {% endblock %}
