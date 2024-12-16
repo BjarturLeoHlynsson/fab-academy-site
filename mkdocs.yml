@@ -7,6 +7,7 @@ site_name: Bjartur's Fab Academy Journey
 site_url: https://fab-lab-bjartur.tech/
 repo_url: https://github.com/BjarturLeoHlynsson/fab-academy-site
 repo_name: "Github Repository"
+edit_uri: edit/main/docs/
 
 # Theme Configuration
 theme:
@@ -18,6 +19,7 @@ theme:
   favicon: images/Logo/FabLabLogo.svg
   icon:
     repo: simple/github
+    view: material/eye
 
   # Typography
   font:
@@ -32,6 +34,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+    - content.action.view
 
   palette:
     # Palette toggle for automatic mode
@@ -94,7 +97,9 @@ extra:
 plugins:
   - search
   - tags
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
 
 nav:
   - Home: index.md
