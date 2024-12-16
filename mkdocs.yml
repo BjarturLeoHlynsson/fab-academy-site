@@ -19,7 +19,6 @@ theme:
   favicon: images/Logo/FabLabLogo.svg
   icon:
     repo: simple/github
-    view: material/eye
 
   # Typography
   font:
