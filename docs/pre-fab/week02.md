@@ -1,7 +1,7 @@
 # Electronics Design and Production
 ## Assignment
 
-- Use KiCad to design a development board to interact and communicate with an embedded microcontroller.
+- Use KiCad to design a development board to interact and communicate with an embedded micro controller.
 - Make and test the development board you designed.
 
 More information can be found on the [:flag_is: Fab Isa Site](https://www.fabisa.is/N%C3%A1msefni/Pre-Fab/2-rafrasasmidi/).
@@ -47,9 +47,11 @@ After adding the components, I connected all of them together and labeled everyt
 
 **(Needs images)**
 
-Next, I opened the PCB Editor and synced my schematic to the editor by pressing this button:
+Next, I opened the PCB Editor by pressing this button on the toolbar in the schematic editor 
 
-![]()
+![KiCad PCB Editor](../images/KiCad/PCB-Editor.png)
+
+Next i synced my schematic to the PCB editor by pressing F8
 
 Then, I arranged the components and started connecting them together following the labels I had made in the Schematic Editor. So I had this:
 
